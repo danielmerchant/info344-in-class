@@ -19,6 +19,7 @@ func memoryHandler(w http.ResponseWriter, r *http.Request) {
 	runtime.GC()
 	stats := &runtime.MemStats{}
 	runtime.ReadMemStats(stats)
+	w.Header().Add("Access-Control-Allow-Origin", "*")
 	w.Header().Add("Content-Type", "application/json")
 	json.NewEncoder(w).Encode(stats)
 }
