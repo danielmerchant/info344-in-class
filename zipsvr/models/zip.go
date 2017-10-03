@@ -3,24 +3,25 @@ package models
 import (
 	"encoding/csv"
 	"fmt"
+	"io"
 	"os"
 )
 
 type Zip struct {
-	Code string
-	City string
+	Code  string
+	City  string
 	State string
 }
 
 type ZipSlice []*Zip
 
 type ZipIndex map[string]ZipSlice
-ę
+
 func LoadZips(filePath string) (ZipSlice, error) {
 	f, err := os.Open(filePath)
 	if err != nil {
 		return nil, fmt.Errorf("Error opening file: %v", err)
-	} 
+	}
 
 	reader := csv.NewReader(f)
 	_, err = reader.Read()
@@ -38,8 +39,8 @@ func LoadZips(filePath string) (ZipSlice, error) {
 			return nil, fmt.Errorf("Error reading record: %v", err)
 		}
 		z := &Zip{
-			Code: fields[0],
-			City: fields[3],
+			Code:  fields[0],
+			City:  fields[3],
 			State: fields[6],
 		}
 		zips = append(zips, z)
