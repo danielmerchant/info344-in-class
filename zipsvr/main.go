@@ -25,7 +25,12 @@ func memoryHandler(w http.ResponseWriter, r *http.Request) {
 }
 
 func main() {
-	//fmt.Println("Hello, World!")
+	zips, err := models
+	if err != nil {
+		log.Fatalf("Error loading zips: %v", err)
+	}
+
+	log.Printf
 	mux := http.NewServeMux()
 	mux.HandleFunc("/hello", helloHandler)
 	mux.HandleFunc("/memory", memoryHandler)
