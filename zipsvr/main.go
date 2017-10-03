@@ -3,13 +3,12 @@ package main
 import (
 	"encoding/json"
 	"fmt"
+	"info344-in-class/zipsvr/models"
 	"log"
 	"net/http"
 	"os"
 	"runtime"
 	"strings"
-
-	"../zipsvr/models"
 )
 
 func helloHandler(w http.ResponseWriter, r *http.Request) {
