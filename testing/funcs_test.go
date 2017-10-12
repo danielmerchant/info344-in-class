@@ -103,7 +103,7 @@ func TestLateDaysConsume(t *testing.T) {
 			expectedOutput = 0
 		}
 		if output := ld.Consume("test"); output != expectedOutput {
-			t.Errorf("iteration %d: got %d but expected %d", i, output, expectedOutput)
+			t.Errorf("iteration is on index %d: got %d but expected %d", i, output, expectedOutput)
 		}
 	}
 }
