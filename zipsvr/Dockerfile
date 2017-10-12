@@ -1,5 +1,5 @@
 FROM scratch
 COPY zips.csv zips.csv
 COPY zipsvr zipsvr
-EXPOSE 80
+EXPOSE 443
 ENTRYPOINT ["/zipsvr"]
