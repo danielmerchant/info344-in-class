@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1510095114991" clover="3.2.0">
+  <project timestamp="1510095114991" name="All files">
+    <metrics statements="12" coveredstatements="11" conditionals="0" coveredconditionals="0" methods="8" coveredmethods="7" elements="20" coveredelements="18" complexity="0" loc="12" ncloc="12" packages="1" files="1" classes="1">
+      <file name="taskStore.js" path="/Users/danielmerchant/workspace/go/src/github.com/danielmerchant/info344-in-class/nodedb/taskStore.js">
+        <metrics statements="12" coveredstatements="11" conditionals="0" coveredconditionals="0" methods="8" coveredmethods="7"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="12" count="1" type="stmt"/>
+        <line num="15" count="1" type="stmt"/>
+        <line num="18" count="1" type="stmt"/>
+        <line num="20" count="1" type="stmt"/>
+        <line num="23" count="2" type="stmt"/>
+        <line num="26" count="1" type="stmt"/>
+        <line num="29" count="0" type="stmt"/>
+        <line num="38" count="1" type="stmt"/>
+      </file>
+    </metrics>
+  </project>
+</coverage>
