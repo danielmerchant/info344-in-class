@@ -41,7 +41,7 @@
         });
         websocket.addEventListener("message", function(event) {
             let p = document.createElement("p");
-            p.textContent = event.data;
+            p.textContent = event.data; //You can use JSON.parse here... hint hint 
             notifications.appendChild(p);
         });
 
